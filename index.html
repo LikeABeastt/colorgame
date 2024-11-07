@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <b>GENE</b>
+        <div class="colorContainer">
+            <div class="color1"></div>
+            <div class="color2"></div>
+            <div class="color3"></div>
+        </div>
+        <div class="moneyContainer">
+            <p class="moneyCount">Cash: P500</p>
+        </div>
+        <div class="betContainer">
+            <p class="betTitle">Your Total Bet:</p>
+            <p class="betAmount"></p>
+        </div>
+        <div class="inputBet">
+            <input type="text" id="inputBet" placeholder="Enter your Bet per Color" oninput="enableChoices()" autocomplete="off">
+            <button id="submitBet" disabled>Submit Bet</button>
+        </div>
+        <div class="choicesContainer">
+            <span><input type="checkbox" id="green" oninput="chooseColor()" disabled><label for="checkbox">Green</label></span>
+            <span><input type="checkbox" id="yellow" oninput="chooseColor()" disabled><label for="checkbox">Yellow</label></span>
+            <span><input type="checkbox" id="blue" oninput="chooseColor()" disabled><label for="checkbox">Blue</label></span>
+            <span><input type="checkbox" id="red" oninput="chooseColor()" disabled><label for="checkbox">Red</label></span>
+            <span><input type="checkbox" id="white" oninput="chooseColor()" disabled><label for="checkbox">White</label></span>
+            <span><input type="checkbox" id="pink" oninput="chooseColor()" disabled><label for="checkbox">Pink</label></span>
+        </div>
+        <div class="buttonContainer">
+            <button id="startBtn" disabled>Start</button>
+            <button id="resetBtn" disabled>New Round</button>
+        </div>
+    </main>
+
+    
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
